@@ -7,7 +7,11 @@ import Nav from "@/Components/Nav";
 const Products = () => {
   return (
     <div className="bg-[#CCD3CA] pt-[4rem] md:pt-[8rem] pb-[5rem] h-[100vh]">
-      <Nav />
+      <Nav
+        openNav={function (): void {
+          throw new Error("Function not implemented.");
+        }}
+      />
       <Particle />
       <div className="absolute left-0 top-0 h-160 w-160">
         <h1>
