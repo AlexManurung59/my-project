@@ -10,7 +10,11 @@ import Nav from "@/Components/Nav";
 const Footer = () => {
   return (
     <div className="pt-[300px] pb-[4rem] bg-[#9BB0C1] h-[100vh]">
-      <Nav />
+      <Nav
+        openNav={function (): void {
+          throw new Error("Function not implemented.");
+        }}
+      />
       <Particle />
       <div className="absolute left-0 top-0 h-160 w-160">
         <h1>

@@ -1,29 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Particle from "@/Components/Particle";
-import Nav from "../../Components/Nav";
-import Link from "next/link";
+import Nav from "@/Components/Nav";
 
-interface Props {
-  nav: boolean;
-  closeNav: () => void;
-}
-
-const About = ({ nav, closeNav }: Props) => {
+const About = () => {
   return (
     <div className="bg-[#EADFB4] pb-[3rem] pt-[4rem] md:pt-[8rem] bg-cover w-[100%] h-[100vh]">
       <div>
         {/* NavBar Section*/}
-        <Nav />
+        <Nav
+          openNav={function (): void {
+            throw new Error("Function not implemented.");
+          }}
+        />
       </div>
       <Particle />
-      <div className="absolute left-0 top-0 h-160 w-160">
-        <h1>
-          <Link href="/">
-            <Image src="/images/Logo.png" alt="photo" width={150} height={50} />
-          </Link>
-        </h1>
-      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
         <div>
           <h1 className="text-[35px] font-bold uppercase text-orange-600 mb-[1rem]">
