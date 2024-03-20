@@ -1,7 +1,7 @@
+import TestiFace from "@/Components/TestiFace";
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import TestiFace from "./TestiFace";
 
 const responsive = {
   desktop: {

@@ -3,7 +3,7 @@ import OurTeamsSlider from "./OurTeamsSlider";
 
 const OurTeams = () => {
   return (
-    <div className="bg-[#0a0a0a] pt-[4rem] md:pt-[8rem]">
+    <div className="bg-[#0a0a0a] pt-[4rem] md:pt-[8rem] bg-cover">
       <h1 className="heading">
         Our <span className="text-orange-500">Teams</span>
       </h1>
