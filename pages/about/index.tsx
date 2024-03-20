@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import Particle from "@/Components/Particle";
-const About = () => {
+import Nav from "../../Components/Nav";
+import Link from "next/link";
+
+interface Props {
+  nav: boolean;
+  closeNav: () => void;
+}
+
+const About = ({ nav, closeNav }: Props) => {
   return (
     <div className="bg-[#EADFB4] pb-[3rem] pt-[4rem] md:pt-[8rem] bg-cover w-[100%] h-[100vh]">
+      <div>
+        {/* NavBar Section*/}
+        <Nav />
+      </div>
       <Particle />
       <div className="absolute left-0 top-0 h-160 w-160">
         <h1>

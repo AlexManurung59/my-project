@@ -3,10 +3,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Particle from "@/Components/Particle";
+import Nav from "@/Components/Nav";
 
 const OurTeams = () => {
   return (
     <div className="bg-[#67C6E3] pt-[4rem] md:pt-[8rem] bg-cover h-[100vh]">
+      <Nav />
       <Particle />
       <div className="absolute left-0 top-0 h-160 w-160">
         <h1>
