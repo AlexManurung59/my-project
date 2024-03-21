@@ -2,17 +2,23 @@ import React from "react";
 import Image from "next/image";
 import Particle from "@/Components/Particle";
 import Nav from "@/Components/Nav";
+import MobileNav from "@/Components/MobileNav";
+
+interface Props {
+  nav: boolean;
+  closeNav: () => void;
+}
 
 const About = () => {
+  function closeNav(): void {
+    throw new Error("Function not implemented.");
+  }
   return (
     <div className="bg-[#EADFB4] pb-[3rem] pt-[4rem] md:pt-[8rem] bg-cover w-[100%] h-[100vh]">
       <div>
         {/* NavBar Section*/}
-        <Nav
-          openNav={function (): void {
-            throw new Error("Function not implemented.");
-          }}
-        />
+        <Nav openNav={function (): void {}} />
+        <MobileNav nav={false} closeNav={function (): void {}} />
       </div>
       <Particle />
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">

@@ -8,7 +8,7 @@ interface Props {
 }
 
 const MobileNav = ({ nav, closeNav }: Props) => {
-  const navAnimation = nav ? "translate-x-0" : "translate-x-[-100%]";
+  const navAnimation = nav ? "translate-x-0" : "translate-x-[100%]";
 
   return (
     <div
@@ -16,22 +16,34 @@ const MobileNav = ({ nav, closeNav }: Props) => {
     >
       <div className="w-[100vw] h-[100vh] flex flex-col items-center justify-center">
         <div className="nav-link-mobile">
-          <Link href="/">HOME</Link>
+          <Link href="/" onClick={closeNav}>
+            HOME
+          </Link>
         </div>
         <div className="nav-link-mobile">
-          <Link href="/about">ABOUT US</Link>
+          <Link href="/about" onClick={closeNav}>
+            ABOUT US
+          </Link>
         </div>
         <div className="nav-link-mobile">
-          <Link href="/product">PRODUCT</Link>
+          <Link href="/product" onClick={closeNav}>
+            PRODUCT
+          </Link>
         </div>
         <div className="nav-link-mobile">
-          <Link href="/team">OUR TEAM</Link>
+          <Link href="/team" onClick={closeNav}>
+            OUR TEAM
+          </Link>
         </div>
         <div className="nav-link-mobile">
-          <Link href="/testimonial">TEST IMONIAL</Link>
+          <Link href="/testimonial" onClick={closeNav}>
+            TESTIMONIAL
+          </Link>
         </div>
         <div className="nav-link-mobile">
-          <Link href="/contact">CONTACT</Link>
+          <Link href="/contact" onClick={closeNav}>
+            CONTACT
+          </Link>
         </div>
       </div>
       <div
